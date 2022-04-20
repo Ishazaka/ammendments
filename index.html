@@ -1,1 +1,374 @@
+ <!-- Eligibility
+		        ============================================= -->
+        <style>
+          .q {
+            display: none;
+            margin-bottom: 40px;
+          }
 
+          /* .eligibility-questions {transition: all 2s ease-out;} */
+        </style>
+        <div id="eligibility" class="page-section clearfix bg-transparent">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-sm-12">
+                <h3 class="center fs-1">Am I a Good Candidate?</h3>
+              </div>
+            </div>
+            <!-- <div class="heading-block center">
+                <h2 class="fw-semibold"></h2>
+              </div> -->
+            <p class="center">
+              Individuals who meet all the following criteria may be a good
+              fit for this study.
+            </p>
+            <p class="center">
+              <strong>Your answers to the below questions will not be stored or
+                recorded.</strong>
+            </p>
+            <div class="d-flex justify-content-center">
+              <div class="card" style="
+                    max-width: 480px;
+                    min-width: 320px;
+                    transition: all 2s ease-out;
+                  ">
+                <!-- <div class="card-header"></div> -->
+                <div class="card-body center">
+                  
+                  
+<!--   i started adding here                 -->
+<!--   from here to location div remove all and add this                 -->
+
+                  <!-- to know adult or padriotic -->
+                  <div class="categoryeligibility-questions mb-3 ">
+                    <div class="q-past-30 " style="margin-bottom:30px;">
+                      <h3 class="fs-4">
+                        Have you diagnosed with COVID-19 in the past 30 days or received investigational monoclonal
+                        antibodies directed towards COVID-19 in the past 30 days?
+                      </h3>
+                      <input type="radio" class="Q1false btn-check" name="q-past-30" id="Q1-option1" value="Yes"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="Q1-option1">Yes</label>
+                      <input type="radio" class="Q1true btn-check" name="q-past-30" id="Q1-option2" value="No"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="Q1-option2">No</label>
+                    </div>
+
+
+                    <div class=" q-yes18  d-none" style="margin-bottom:30px;">
+                      <h3 class="fs-4">
+                        Are you atleast 18 year old?
+                      </h3>
+                      <input type="radio" class="btn-check" name="q-autoimmunedisease" id="Q2-option1" value="Yes"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="Q2-option1">Yes</label>
+                      <input type="radio" class="btn-check" name="q-autoimmunedisease" id="Q2-option2" value="No"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="Q2-option2">No</label>
+                    </div>
+
+                    <div class=" q-behalfof  d-none" style="margin-bottom:30px;">
+                      <h3 class="fs-4">
+                        Are you answering on behalf of minor?
+                      </h3>
+                      <input type="radio" class="btn-check" name="q-behalf" id="Q3-option1" value="Yes"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="Q3-option1">Yes</label>
+                      <input type="radio" class="btn-check" name="q-behalf" id="Q3-option2" value="No"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="Q3-option2">No</label>
+                    </div>
+
+
+
+                    <button style="min-width: 180px" class="next btn btn-primary">
+                      Next
+                    </button>
+
+                  </div>
+
+
+
+                  <!-- adult arm -->
+
+                  <div class="adulteligibility-questions  mb-3 d-none">
+
+                    <div class=" q-adult1">
+                      <h3 class="fs-4">
+                        Do you have one of the following autoimmune diseases?
+                      </h3>
+                      <ul class="list-unstyled">
+                        <li>Multiple Sclerosis</li>
+                        <li>Pemphigus</li>
+                        <li>Rheumatoid Arthritis</li>
+                        <li>Scleroderma</li>
+                        <li>Systemic Lupus Erythematosus</li>
+                      </ul>
+                      <input type="radio" class="btn-check" name="q-adult1" id="ad-q1-option1" value="Yes"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="ad-q1-option1">Yes</label>
+                      <input type="radio" class="btn-check" name="q-adult1" id="ad-q1-option2" value="No"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="ad-q1-option2">No</label>
+                    </div>
+
+                    <div class="q-diag d-none ">
+                      <h3 class="fs-4">
+                        Are you currently taking mycophenolate mofetil, mycophenolic acid, methotrexate,
+                        or a B-cell depleting medication like rituximab, orcelizumab, or ofatumumab?
+                      </h3>
+
+                      <input type="radio" class="btn-check" name="q-diag" id="ad-q2-option1" value="Yes"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="ad-q2-option1">Yes</label>
+                      <input type="radio" class="btn-check" name="q-diag" id="ad-q2-option2" value="No"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="ad-q2-option2">No</label>
+                    </div>
+
+                    <div class="q-globulin d-none">
+                      <h3 class="fs-4">
+                        Are you currently receiving immune globulin replacement therapy, or taking any ot the following:
+                        medications
+                      </h3>
+                      <ul class="list-unstyled">
+                        <li>Cyclophosphamide</li>
+                        <li>Cladribine</li>
+                        <li>Alemtuzumab</li>
+                        <li>Mitoxaptrone</li>
+
+                      </ul>
+                      <input type="radio" class="btn-check" name="q-globulin" id="ad-q3-option1" value="Yes"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="ad-q3-option1">Yes</label>
+                      <input type="radio" class="btn-check" name="q-globulin" id="ad-q3-option2" value="No"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="ad-q3-option2">No</label>
+                    </div>
+                    <div class="q-pregnant d-none ">
+                      <h3 class="fs-4">
+                        Are you currently pregnant, breastfeeding , or planning to get pregnant in the next year ?
+                      </h3>
+
+                      <input type="radio" class="btn-check" name="q-pregnant" id="ad-q4-option1" value="Yes"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="ad-q4-option1">Yes</label>
+                      <input type="radio" class="btn-check" name="q-pregnant" id="ad-q4-option2" value="No"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="ad-q4-option2">No</label>
+                    </div>
+
+
+                    <div class="q-buttons d-flex justify-content-around">
+                      <button style="min-width: 180px" class="previous btn btn-outline-secondary">
+                        Previous
+                      </button>
+                      <button style="min-width: 180px" class="next btn btn-primary">
+                        Next
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- stage screening -->
+
+
+                  <div class="screening-questions  mb-3 d-none">
+
+                    <div class=" q-screen1">
+                      <h3 class="fs-4">
+                        Have you completed your initial vaccine series with 2 doses of Pfizer COVID-19 vaccine or 2
+                        doses of Moderna COVID-19 vaccine ?
+                      </h3>
+
+                      <input type="radio" class="btn-check" name="q-screen1" id="scr-q1-option1" value="Yes"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="scr-q1-option1">Yes</label>
+                      <input type="radio" class="btn-check" name="q-screen1" id="scr-q1-option2" value="No"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="scr-q1-option2">No</label>
+                    </div>
+
+                    <div class="q-screen2 d-none ">
+                      <h3 class="fs-4">
+                        Have you received any additional COVID-19 vaccine doses?
+                      </h3>
+
+                      <input type="radio" class="btn-check" name="q-screen2" id="scr-q2-option1" value="Yes"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="scr-q2-option1">Yes</label>
+                      <input type="radio" class="btn-check" name="q-screen2" id="scr-q2-option2" value="No"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="scr-q2-option2">No</label>
+                    </div>
+
+                    <div class="q-screen3 d-none">
+                      <h3 class="fs-4">
+                        Was your additional vaccine dose(s) the same as your original vaccine ? For Example, if you
+                        received 2 doses of Pfizer, was your 3rd dose of Pfizer as well ?
+                      </h3>
+                      <input type="radio" class="btn-check" name="q-screen3" id="scr-q3-option1" value="Yes"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="scr-q3-option1">Yes</label>
+                      <input type="radio" class="btn-check" name="q-screen3" id="scr-q3-option2" value="No"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="scr-q3-option2">No</label>
+                    </div>
+                    <div class="q-screen4 d-none ">
+                      <h3 class="fs-4">
+                        Have you completed your initial vaccine series with 1 doses of Janssen COVID-19 vaccine ?
+                      </h3>
+
+                      <input type="radio" class="btn-check" name="q-screen4" id="scr-q4-option1" value="Yes"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="scr-q4-option1">Yes</label>
+                      <input type="radio" class="btn-check" name="q-screen4" id="scr-q4-option2" value="No"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="scr-q4-option2">No</label>
+                    </div>
+                    <div class="q-screen5 d-none ">
+                      <h3 class="fs-4">
+                        Have you received any additional Janssen COVID-19 vaccine dose(s) ?
+                      </h3>
+
+                      <input type="radio" class="btn-check" name="q-screen5" id="scr-q5-option1" value="Yes"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="scr-q5-option1">Yes</label>
+                      <input type="radio" class="btn-check" name="q-screen5" id="scr-q5-option2" value="No"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="scr-q5-option2">No</label>
+                    </div>
+
+
+                    <div class="q-buttons d-flex justify-content-around">
+                      <button style="min-width: 180px" class="previous btn btn-outline-secondary">
+                        Previous
+                      </button>
+                      <button style="min-width: 180px" class="next btn btn-primary">
+                        Next
+                      </button>
+                    </div>
+                  </div>
+
+
+
+
+
+                  <div class="ineligible d-none">
+                    <h3 class="fs-4">
+                      We're sorry, you are not a candidate.
+                    </h3>
+                  </div>
+
+                  <div class="Pediatriceligible d-none">
+                    <h3 class="fs-4">
+                      You may be a candidate for the Pediatric cohort
+                    </h3>
+                  </div>
+
+                  <div class="adult1eligible d-none">
+                    <h3 class="fs-4">
+                      You may be a candidate for the Adult Stage 1 cohort
+                    </h3>
+                  </div>
+
+                  <div class="adult2eligible d-none">
+                    <h3 class="fs-4">
+                      You may be a candidate for the Adult Stage 2 cohort
+                    </h3>
+                  </div>
+
+
+                  <!-- padiatric -->
+
+                  <div class="eligibility-questions padiatric mb-3 d-none">
+
+                    <div class="q q-age inclusion">
+                      <h3 class="fs-4">
+                        Does the juvenile patient have one of the following autoimmune diseases?
+                      </h3>
+                      <ul class="list-unstyled">
+                        <li>Juvenile dermatomyoasitis</li>
+                        <li>Juvenile idiopathic arthritis</li>
+                        <li>Pediatic-onset multiple sclerosis</li>
+                        <li>Pediatic systemic lupus</li>
+                        <li> Erythematosus</li>
+                      </ul>
+                      <input type="radio" class="btn-check" name="q-age" id="q1-option1" value="Yes"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="q1-option1">Yes</label>
+                      <input type="radio" class="btn-check" name="q-age" id="q1-option2" value="No"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="q1-option2">No</label>
+                    </div>
+
+                    <div class="q q-diagnosis inclusion">
+                      <h3 class="fs-4">
+                        Is the Juvenile patient currently taking mycophenolate mofet mycophenolic acid, methotrexate,
+                        or aB-cell depleting medication like rituximab, orcelizumab, or ofatumumab?
+                      </h3>
+
+                      <input type="radio" class="btn-check" name="q-diagnosis" id="q2-option1" value="Yes"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="q2-option1">Yes</label>
+                      <input type="radio" class="btn-check" name="q-diagnosis" id="q2-option2" value="No"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="q2-option2">No</label>
+                    </div>
+
+                    <div class="q q-agent exclusion">
+                      <h3 class="fs-4">
+                        Is the Juvenile patient currently taking cyclophosphamide ?
+                      </h3>
+                      <input type="radio" class="btn-check" name="q-agent" id="q3-option1" value="Yes"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="q3-option1">Yes</label>
+                      <input type="radio" class="btn-check" name="q-agent" id="q3-option2" value="No"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="q3-option2">No</label>
+                    </div>
+                    <div class="q q-booster inclusion">
+                      <h3 class="fs-4">
+                        Has the Juvenile patient completed their initial vaccine series with 2 doses of the Pfizer
+                        COVID-19 vaccine ?
+
+                      </h3>
+                      <input type="radio" class="btn-check" name="q-booster" id="q4-option1" value="Yes"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="q4-option1">Yes</label>
+                      <input type="radio" class="btn-check" name="q-booster" id="q4-option2" value="No"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="q4-option2">No</label>
+                    </div>
+                    <div class="q q-history exclusion">
+                      <h3 class="fs-4">
+                        Has the Juvenile patient recieved any additional COVID-19 vaccine doses ?
+                      </h3>
+                      <input type="radio" class="btn-check" name="q-history" id="q5-option1" value="Yes"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="q5-option1">Yes</label>
+                      <input type="radio" class="btn-check" name="q-history" id="q5-option2" value="No"
+                        autocomplete="off" />
+                      <label class="btn btn-outline-secondary" for="q5-option2">No</label>
+                    </div>
+
+                    <div class="q-buttons d-flex justify-content-around">
+                      <button style="min-width: 180px" class="d-none previous btn btn-outline-secondary">
+                        Previous
+                      </button>
+                      <button style="min-width: 180px" class="next btn btn-primary">
+                        Next
+                      </button>
+                    </div>
+                  </div>
+
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Locations
+		        ============================================= -->
