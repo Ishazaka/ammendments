@@ -9,7 +9,7 @@
 //     });
 //   });
 
-// remove every thing below it  and add the lines which i write below
+// remove every thing after it   and add the lines which i write below
 
 
 
@@ -297,6 +297,12 @@
       );
     });
   }
+
+
+
+})(google, jQuery);
+
+
 
 
 
